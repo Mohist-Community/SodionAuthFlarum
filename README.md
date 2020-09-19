@@ -1,2 +1,3 @@
-# -SodionAuthFlarum
+# SodionAuthFlarum
+
 Flarum plugin for SodionAuth
