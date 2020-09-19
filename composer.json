@@ -1,5 +1,5 @@
 {
-    "name": "mohist/flarum-sodionAuth",
+    "name": "mohist/flarum-sodion-auth",
     "description": "SodionAuth api for flarum.",
     "type": "flarum-extension",
     "minimum-stability": "beta",
@@ -18,7 +18,7 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "SodionAuth-flarum",
+            "title": "SodionAuth Flarum",
             "icon": {
                 "name": "fas fa-smile",
                 "backgroundColor": "#238c59",
