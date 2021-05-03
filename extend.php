@@ -2,15 +2,18 @@
 
 use Flarum\Extend;
 use Flarum\Frontend\Document;
+use Mohist\SodionAuthFlarum\Command\ApiKeyCommand;
 use Mohist\SodionAuthFlarum\Controller\Controller;
 
 return [
     (new Extend\Frontend('forum'))
         ->content(function (Document $document) {
-            $document->head[] = '<!—- SodionAuthFlarum —->';
+            $document->head[] = '<!-- SodionAuthFlarum Enabled -->';
         }),
     (new Extend\Routes('api'))
-        ->post('/sodionAuth', 'sodionAuth', Controller::class),
+        ->post('/sodionauth', 'sodionauth', Controller::class),
     (new Extend\Csrf())
-        ->exemptPath('/api/sodionAuth')
+        ->exemptRoute('sodionauth'),
+    (new Extend\Console())
+        ->command(ApiKeyCommand::class)
 ];

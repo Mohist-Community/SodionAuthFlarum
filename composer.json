@@ -1,7 +1,7 @@
 {
     "name": "mohist/flarum-sodion-auth",
     "description": "SodionAuth api for flarum.",
-    "version": "v0.0.1",
+    "version": "v0.0.2",
     "type": "flarum-extension",
     "license": "Apache-2.0",
     "authors": [
@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "mohist/sodion-auth": "^0.0.1"
+        "../sodion-auth": "^0.0.2"
     },
     "autoload": {
         "psr-4": {
