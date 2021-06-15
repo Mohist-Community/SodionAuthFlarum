@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "../sodion-auth": "^0.0.2"
+        "mohist/sodion-auth": "*"
     },
     "autoload": {
         "psr-4": {
